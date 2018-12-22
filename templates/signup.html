@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./static/css/bulma.css" />
+    <title>Axis AI Challenge</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a
+            class="navbar-item has-text-centered"
+            href="https://www.axisbank.com/"
+          >
+            <img
+              src="./static/images/1280px-Axis_Bank_logo.svg.png"
+              alt="Axis AI challenge"
+              width="112"
+              height="42"
+            />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      </nav>
+
+       <form action="/signUpform" method="post">
+
+          <div class="column is-4 is-offset-4">
+                <div class="field">
+                      <label class="label">Name</label>
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Text input" name="name" />
+                      </div>
+                    </div>
+
+                    <div class="field">
+                      <label class="label">Username</label>
+                      <div class="control has-icons-left has-icons-right">
+                        <input
+                          class="input is-success"
+                          type="text"
+                          placeholder="Text input"
+                          value="bulma"
+                          name="username"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-user"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                          <i class="fas fa-check"></i>
+                        </span>
+                      </div>
+                      </div>
+
+                    <div class="field">
+                      <label class="label">Password</label>
+                      <div class="control has-icons-left has-icons-right">
+                        <input
+                          class="input is-danger"
+                          type="password"
+                          placeholder="Password input"
+                          name="password"
+                        />
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="icon is-small is-right">
+                          <i class="fas fa-exclamation-triangle"></i>
+                        </span>
+                      </div>
+                      </div>
+
+                    <div class="field is-grouped">
+                      <div class="control">
+                        <input type="submit" value="Submit" class="button is-link">
+                      </div>
+                      <div class="control">
+                          <input type="submit" value="Cancel" class="button is-link">
+                      </div>
+                    </div>
+
+      </div>
+            </form>
+      
+    </div>
+   <footer>
+        <div class="content has-text-centered">
+          <p class="subtitle is-6">
+            Made with <i class="fa fa-heart has-text-danger" aria-hidden="true"></i> and <i class="fa fa-coffee has-text-primary" aria-hidden="true"></i> in New Delhi for AXIS AI Challenge.
+          </p>
+        </div>
+      </footer>
+  </body>
+</html>

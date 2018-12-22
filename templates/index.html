@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bulma.css')}}" />
+    <title>Axis AI Challenge</title>
+  </head>
+  <body>
+
+    <section class="hero is-fullheight is-danger is-bold">
+      <div class="hero-head">
+        <div class="container">
+          <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a
+                class="navbar-item has-text-centered"
+                href="https://www.axisbank.com/"
+              >
+                <img
+                  src="./static/images/1280px-Axis_Bank_logo.svg.png"
+                  alt="Axis AI challenge"
+                  width="112"
+                  height="42"
+                />
+              </a>
+
+              <a
+                role="button"
+                class="navbar-burger"
+                aria-label="menu"
+                aria-expanded="false"
+              >
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title has-text-centered">AXIS AI Challenge</h1>
+          <div class="columns">
+            <div class="column is-4 is-offset-4 has-text-centered">
+              <h3 class="title has-text-white">Login</h3>
+              <p class="subtitle has-text-white">Please login to proceed.</p>
+              <div class="box">
+                <form action="/handle_data" method="post">
+                  <div class="field">
+                    <div class="control">
+                      <input
+                        class="input is-large"
+                        type="text"
+                        placeholder="Your username"
+                        autofocus=""
+                        name="username"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <input
+                        class="input is-large"
+                        type="password"
+                        placeholder="Your Password"
+                        name="password"
+                      />
+                    </div>
+                  </div>
+                  <div class="buttons">
+                      <input type="submit" class="button is-success is-large is-fullwidth" value="Login"/>
+
+                  </div>
+
+                </form>
+                  <a href="signup"><input type ="button" class="button is-info is-large is-fullwidth" value="Sign Up" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <footer>
+        <div class="content has-text-centered">
+          <p class="subtitle is-6">
+            Made with <i class="fa fa-heart has-text-danger" aria-hidden="true"></i> and <i class="fa fa-coffee has-text-primary" aria-hidden="true"></i> in New Delhi for AXIS AI Challenge.
+          </p>
+        </div>
+      </footer>
+  </body>
+</html>
